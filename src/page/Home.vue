@@ -43,7 +43,7 @@ export default {
               number: "02",
               title: "Collaboration",
               content:
-                "Work with other student athletes to increase visibility. When you share and like other players' videos, it will increase your visibility as a player. This is the team work aspect of Surface 1.",
+                "Work with other student athletes to increase visibility. When you share and like other players videos, it will increase your visibility as a player. This is the team work aspect of Surface 1.",
             },
             {
               number: "03",
