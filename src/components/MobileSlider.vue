@@ -1,18 +1,29 @@
 <template>
   <div :class="title">
-    <div class="header-title-h1 text-uppercase">
+    <div class="header-title-h1 uppercase">
       {{ title }}
     </div>
-    <ImageContent :topic="title" />
+    <img
+      v-if="title == 'athlets'"
+      src="../assets/image/img-athlets-mobile.png"
+      class="h-img-athlete-xs"
+      alt=""
+    />
+    <img
+      v-else
+      src="../assets/image/img-basketball-mobile.png"
+      class="h-img-players-xs"
+      alt=""
+    />
     <Splide :options="splideOptions">
       <SplideSlide v-for="(item, index) in items" :key="index">
-        <div class="container-sub-title flex item-center">
+        <div class="container-sub-title-xs flex item-center">
           <div class="group-number">
             <div class="text-number">{{ item.number }}</div>
             <div class="number-underline"></div>
           </div>
           <div>
-            <h3 class="title-h3 text-uppercase">{{ item.title }}</h3>
+            <h3 class="title-h3 uppercase">{{ item.title }}</h3>
           </div>
         </div>
         <div class="text-content">
@@ -65,8 +76,9 @@ export default {
   },
 };
 </script>
-<style lang="css" scoped>
-.container-sub-title {
+
+<style lang="css">
+.container-sub-title-xs {
   padding-top: 1.063rem;
 }
 .splide__slide {
@@ -90,11 +102,21 @@ export default {
   transform: unset;
   z-index: 1;
 }
-.header-title-h1 {
-  color: #e7e7e7;
-  font-size: 3.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+</style>
+<style lang="css" scoped>
+.h-img-athlete-xs {
+  max-height: 59.375rem;
+  max-width: 42.375rem;
+  position: relative;
+  margin: 0 auto -5rem auto;
+  z-index: 1;
+}
+
+.h-img-players-xs {
+  position: relative;
+  margin-bottom: -3.25rem;
+  margin-top: 23px;
+  margin-left: 0.5rem;
+  z-index: 1;
 }
 </style>
