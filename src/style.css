@@ -156,13 +156,7 @@ button:focus-visible {
 }
 
 @media (min-width: 320px) {
-  .header-title-h1 {
-    color: #e7e7e7;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+
   .title-h3 {
     color: #C2C2C2;
     font-size: 28px;

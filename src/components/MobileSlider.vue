@@ -1,6 +1,6 @@
 <template>
   <div :class="title">
-    <div class="header-title-h1 uppercase">
+    <div class="header-title-h1-xs uppercase">
       {{ title }}
     </div>
     <img
@@ -104,6 +104,13 @@ export default {
 }
 </style>
 <style lang="css" scoped>
+.header-title-h1-xs {
+  color: #e7e7e7;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .h-img-athlete-xs {
   max-height: 59.375rem;
   max-width: 42.375rem;
