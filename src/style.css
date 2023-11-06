@@ -67,10 +67,6 @@ button:focus-visible {
   padding: 2em;
 }
 
-#app {
-  max-width: 1920px;
-
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -492,4 +488,42 @@ button:focus-visible {
     padding-top: 87px;
     padding-bottom: 62px;
   }
+}
+
+
+.container{
+  max-width: 1530px;
+}
+.content-items-0 {
+  padding-top: 59px;
+  padding-bottom: 56px;
+}
+.content-items-1 {
+  padding-top: 53px;
+  padding-bottom: 56px;
+}
+.content-items-2 {
+  padding-top: 53px;
+  padding-bottom: 56px;
+}
+.content-items-0  .text-content {
+  padding-top: 31px;
+}
+.content-items-1  .text-content ,.content-items-2  .text-content {
+  padding-top: 21px;
+}
+#players .header-title-h1 {
+  padding-top: 124px;
+}
+.content-players-items-0 {
+  padding-top: 68px;
+  padding-bottom: 69px;
+}
+.content-players-items-1 {
+  padding-top: 52px;
+  padding-bottom: 102px;
+}
+.content-players-items-2 {
+  padding-top: 87px;
+  padding-bottom: 62px;
 }
